@@ -1,0 +1,98 @@
+footer{
+    margin-top: 75px;
+    color: $text-color;
+    background-color: $back-color-yellow;
+}
+#Sub-Div a, .follow a{
+    color: $text-color;
+}
+#Sub-Div h2{
+    font-family: $Lato-Bold;
+}
+#SubGr{
+    width: 92%;
+    height: 46px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    @include breakpoint(mobile-xl){
+        height: 44px;
+    }
+}
+#SubGr input{
+    font-family: $Lato-Regular;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    padding-right: 190px;
+    &:focus{
+        outline: none;
+    }
+    @include breakpoint(mobile-xl){
+        padding-right: 150px;
+    }
+    @include breakpoint(mobile-m){
+        padding-right: 135px;
+    }
+    @include breakpoint(mobile-s){
+        padding-right: 118px;
+    }
+}
+#SubGr button{
+    border-radius: 25px;
+    font-family: $SF-Bold;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    font-size: $medium;
+    margin: 3px 0px;
+    color: $sub-btn-color;
+    padding: 0px 30px;
+    @include breakpoint(mobile-xl){
+        font-size: 13px;
+        padding: 0px 20px;
+        margin-top: 5px;
+    }
+    @include breakpoint(mobile-l){
+        font-size: 12px;
+    }
+    @include breakpoint(mobile-m){
+        font-size: 12px;
+        padding: 10px 15px !important;
+        margin: 3px 0px;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 11px;
+        margin-top: 4px;
+        padding: 10px 10px !important;
+    }
+}
+.listborder{
+    border-right: 1px solid rgba(112,112,112,0.3);
+    @include breakpoint(tablet){
+        border-right: none;
+    }
+}
+#CR span, #PB span{
+    font-family: $Lato-Bold;
+    font-size: $normal;
+}
+#CR-p{
+    font-family: $Lato-Regular;
+    font-size: $normal;
+}
+#PB p{
+    @extend #CR-p;
+}
+#Contact-Div p{
+    @extend #CR-p;
+}
+#Contact-Div{
+    background-color: #1d1d1d1c;
+}
+#Contact-Div h5{
+    font-family: $Lato-Bold;
+}
+#FU{
+    font-family: "Aileron", sans-serif;
+}

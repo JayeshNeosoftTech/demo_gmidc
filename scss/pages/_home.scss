@@ -1,0 +1,459 @@
+#About_Us{
+    margin-top: 98px;
+}
+#About_Us-h1{
+    font-family: $Poppins-Bold;
+    color: $heading-color;
+    position: relative;
+    line-height: 1;
+    @include heading-size;
+}
+.newsText h1, #services h1, .Tender_Heading h1{
+    @extend #About_Us-h1;
+    @include breakpoint(tablet){
+        font-size: 100px;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: 80px;
+    }
+    @include breakpoint(mobile-l){
+        font-size: 70px;
+    }
+    @include breakpoint(mobile-m){
+        font-size: 60px;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 50px;
+    }
+}
+#About_Us-h1{
+    @include breakpoint(desktop){
+        font-size: 100px;
+    }
+    @include breakpoint(tablet){
+        font-size: 80px;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: 62px;
+    }
+    @include breakpoint(mobile-l){
+        font-size: 55px;
+    }
+    @include breakpoint(mobile-m){
+        font-size: 45px;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 40px;
+    }
+}
+#About_Us-span{
+    font-family: $Poppins-Bold;
+    color: $subheading-color;
+    font-size: 36px;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.newsText span, #services .S-span, .Tender_Heading span{
+    @extend #About_Us-span;
+    @include breakpoint(tablet){
+        font-size: 30px;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: 20px;
+    }
+    @include breakpoint(mobile-l){
+        font-size: 18px;
+    }
+    @include breakpoint(mobile-m){
+        font-size: 15px;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 12px;
+    }
+}
+#About_Us-span{
+    @include breakpoint(desktop){
+        font-size: 30px;
+    }
+    @include breakpoint(ipad-max){
+        bottom: 12%;
+    }
+    @include breakpoint(tablet){
+        font-size: 20px;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: $heading-size;
+    }
+    @include breakpoint(mobile-l){
+        font-size: $normal;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 12px;
+    }
+}
+#About_Us-p{
+    font-family: SFCompactDisplay-Regular;
+    color: #272727;
+    @include breakpoint(mobile-xl){
+        font-size: $normal;
+    }
+}
+#About_Us-button{
+    background-color: $back-color-yellow;
+    border-radius: $smaller;
+    @extend #About_Us-p;
+    &:focus{
+        box-shadow: 0 0 0 0.25rem $btn-shadow;
+    }
+    @include breakpoint(mobile-m){
+        font-size: $smaller;
+    }
+}
+#services button{
+    @extend #About_Us-button;
+}
+.VMbtn button{
+    @extend #About_Us-button;
+}
+.newsText div{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -115px;
+    top: 140px;
+    @include breakpoint(ipad-max){
+        transform: rotate(360deg);
+        position: initial;
+    }
+}
+.newsText div h1{
+    @include breakpoint(ipad-max){
+        text-align: center;
+    }
+}
+#services{
+    margin-top: 80px;
+}
+.s-options img{
+    @include breakpoint(mobile-l){
+        width: 60px;
+        height: 60px;
+    }
+    @include breakpoint(mobile-m){
+        width: 50px;
+        height: 50px;
+    }
+    @include breakpoint(mobile-s){
+        width: 45px;
+        height: 45px;
+    }
+}
+.s-options h4{
+    font-family: $Lato-Black;
+    color: $text-color;
+    font-size: $medium;
+    @include breakpoint(mobile-l){
+        font-size: $normal;
+    }
+    @include breakpoint(mobile-m){
+        font-size: $smaller;
+    }
+}
+.Tender_Heading{
+    margin-top: 60px;
+}
+.NewsCon{
+    margin-top: 105px;
+}
+
+.owl-carousel{
+    width: 100%;
+    
+}
+.slide{
+    height: 420px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 50px;
+    @include breakpoint(tablet){
+        height: 300px;
+    }
+    @include breakpoint(mobile-xl){
+        height: 220px;
+    }
+    @include breakpoint(mobile-s){
+        height: 160px;
+    }
+}
+.slide::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sliderCon1{
+    background-image: url('../images/Jayakwadi_Dam.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 382px;
+    position: relative;
+    @include breakpoint(tablet){
+        height: 260px;
+    }
+    @include breakpoint(mobile-xl){
+        height: 200px;
+    }
+    @include breakpoint(mobile-s){
+        height: 160px;
+    }
+}
+.sliderCon2{
+    background-image: url('../images/Krishna_Dam1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 382px;
+    @include breakpoint(tablet){
+        height: 260px;
+    }
+    @include breakpoint(mobile-xl){
+        height: 200px;
+    }
+    @include breakpoint(mobile-s){
+        height: 160px;
+    }
+}
+.sliderCon3{
+    background-image: url('../images/Krishna_Dam2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 382px;
+    @include breakpoint(tablet){
+        height: 260px;
+    }
+    @include breakpoint(mobile-xl){
+        height: 200px;
+    }
+    @include breakpoint(mobile-s){
+        height: 160px;
+    }
+}
+.big {
+    transform: scale(1.2,1.2);
+    margin-right: 36px;
+    margin-left: 40px;
+}
+.dateDiv{
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffff;
+    border-radius: 10px;
+    right: 32px;
+    position: absolute;
+    top: 28px;
+    @include breakpoint(mobile-s){
+        border-radius: 5px;
+    }
+}
+.dateDiv h5{
+    font-family: $SFCompactDisplay-Regular;
+    color: $text-color;
+    font-size: 31px;
+    margin: 4px 4px 4px 8px;
+    @include breakpoint(ipad-max){
+        font-size: 28px;
+    }
+    @include breakpoint(tablet){
+        font-size: 22px;
+    }
+    @include breakpoint(mobile-xl){
+        margin: 2px 2px 2px 4px;
+    }
+    @include breakpoint(mobile-s){
+        margin: 2px 2px;
+        font-size: 12px;
+    }
+}
+.dateDiv h4{
+    font-family: $SF-Bold;
+    color: $text-color;
+    font-size: $small;
+    margin: 4px 8px 4px 4px;
+    @include breakpoint(ipad-max){
+        font-size: 9px;
+    }
+    @include breakpoint(tablet){
+        font-size: 8px;
+    }
+    @include breakpoint(mobile-xl){
+        margin: 2px 2px 2px 0px;
+    }
+    @include breakpoint(mobile-s){
+        margin: 3px 2px 2px 0px;
+        font-size: 5px;
+    }
+}
+.descS1{
+    background-color: rgba(41, 24, 24, 0.56);
+    bottom: 0;
+}
+.desc{
+    background-color: rgba(10, 10, 10, 0.1);
+    bottom: 0;
+}
+.desc h5, .descS1 h5{
+    font-family: $Poppins-Bold;
+    font-size: $heading-size;
+    @include breakpoint(desktop){
+        font-size: 15px;
+    }
+    @include breakpoint(tablet){
+        font-size: 13px;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: 12px;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 7px;
+    }
+}
+.descS1 p{
+    font-family: $Poppins-Regular;
+    font-size: $normal;
+    @include breakpoint(desktop){
+        font-size: 12px;
+    }
+    @include breakpoint(tablet){
+        font-size: 10px;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: 8px;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 5px;
+    }
+}
+.PreNextbtn{
+    width: fit-content; 
+    border-radius: 12px;
+    background-color: $back-color-yellow;
+    display: none;
+}
+.PreNextbtn button{
+    background:transparent;
+    font-size: larger;
+    @include breakpoint(tablet){
+        font-size: small;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: smaller;
+    }
+}
+.slide.big .PreNextbtn{
+    display: block;
+    @include breakpoint(mobile-s){
+        display: none;
+    }
+}
+.Tender_Img{
+    margin-top: 75px;
+}
+.Tender_Heading .col-T1{
+    padding: 0px 12px 0px 0px;
+    @include breakpoint(ipad-max){
+        padding: 0px 0px 0px 0px;
+    }
+}
+.Tender_Heading .col-T2{
+    padding: 0px 0px 0px 12px;
+    @include breakpoint(ipad-max){
+        padding: 0px 0px 0px 0px;
+        margin-top: 35px;
+    }
+}
+.col-T1, .col-T2{
+    @include breakpoint(tablet){
+        height: 200px;
+    }
+    @include breakpoint(mobile-l){
+        height: 180px;
+    }
+    @include breakpoint(mobile-m){
+        height: 130px;
+    }
+    @include breakpoint(mobile-s){
+        height: 100px;
+    }
+}
+.col-T1>div:first-child, .col-T2>div:first-child{
+    @include breakpoint(tablet){
+        height: 100%;
+    }
+}
+.col-T1 img, .col-T2 img{
+    @include breakpoint(mobile-m){
+        width: 135px;
+    }
+    @include breakpoint(mobile-s){
+        width: 125px;
+    }
+}
+.tender1{
+    margin: 27px 23px 0px 27px;
+}
+.tender1 h4{
+    font-family: $Poppins-Bold;
+    font-size: $heading-size;
+    color: $text-color;
+    @include breakpoint(tablet){
+        font-size: $medium;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: $normal;
+    }
+    @include breakpoint(mobile-l){
+        font-size: $small;
+    }
+    @include breakpoint(mobile-m){
+        font-size: $smaller;
+    }
+    @include breakpoint(mobile-s){
+        font-size: $x-smaller;
+    }
+}
+.tender1 p{
+    font-family: $Poppins-Regular;
+    font-size: $medium;
+    color: $text-color;
+    @include breakpoint(tablet){
+        font-size: $normal;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: $small;
+    }
+    @include breakpoint(mobile-l){
+        font-size: $smaller;
+    }
+    @include breakpoint(mobile-m){
+        font-size: $x-smaller;
+    }
+    @include breakpoint(mobile-s){
+        font-size: 6px;
+    }
+}
+.borderContact{
+    border-bottom: 1px rgba(112, 112, 112, 0.2) solid;
+}
+.follow-span{
+    opacity: 30%;
+}
+.VMbtn{
+    margin-top: 66px;
+}
+.tender4{
+    @include breakpoint(large-desktop){
+        height: 100%;
+    }
+}

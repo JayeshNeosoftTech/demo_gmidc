@@ -1,0 +1,254 @@
+.navbar{
+    top: 5px;
+    @include breakpoint(tablet){
+        top: 5px;
+    }
+}
+#navbar{
+    width: 105%;
+    height: 660px;
+    margin-left: -1%;
+    @include breakpoint(ipad-max){
+        height: 520px;
+    }
+    @include breakpoint(tablet){
+        height: 395px;
+    }
+    @include breakpoint(mobile-xl){
+        width: 107%;
+        margin-left: -2%;
+    }
+    @include breakpoint(mobile-l){
+        width: 110%;
+        margin-left: -3%;
+        height: 375px;
+    }
+}
+#collapsenav1{
+    background-color: rgba(0, 0, 0, 0.105);
+    @include breakpoint(ipad-max){
+        margin-left: 10px;
+    }
+    @include breakpoint(tablet){
+        margin-left: 5px;
+    }
+    @include breakpoint(mobile-xl){
+        margin-left: 13px;
+    }
+}
+#nav_IMG{
+    height: 675px;
+    transform: rotate(-4deg);
+    margin-top: -5%;
+    margin-left: -2%;
+    background-size: cover;
+    overflow: hidden;
+    @include breakpoint(large-desktop){
+        margin-top: -6%;
+    }
+    @include breakpoint(ipad-max){
+        height: 530px;
+    }
+    @include breakpoint(tablet){
+        height: 400px;
+        margin-top: -7%;
+    }
+    @include breakpoint(mobile-xl){
+        margin-top: -8%;
+    }
+    @include breakpoint(mobile-l){
+        height: 375px;
+        margin-top: -10%;
+    }
+}
+#ul-1{
+    margin-right: 10%;
+    @include breakpoint(large-desktop){
+        margin-right: 4%;
+    }
+    @include breakpoint(ipad-max){
+        display: none;
+    }
+}
+#ul-2{
+    margin-right: 8%;
+    @include breakpoint(large-desktop){
+        margin-right: 2%;
+    }
+}
+.navbar-brand{
+    margin-left: 6%;
+    @include breakpoint(large-desktop){
+        margin-left: 2%;
+    }
+    @include breakpoint(ipad-max){
+        margin-left: 6%;
+    }
+    @include breakpoint(mobile-s){
+        margin-left: 10px;
+    }
+}
+.navbar-brand img{
+    @include breakpoint(mobile-xl){
+        width: 45px;
+        height: 45px;
+    }
+    @include breakpoint(mobile-m){
+        width: 40px;
+        height: 40px;
+    }
+}
+.spanlogo{
+    @include breakpoint(mobile-xl){
+        margin-top: 3px;
+    }
+}
+.navbar-brand span{
+    font-family: $RobotoCondensed-Bold;
+    color: $text-color;
+    height: max-content;
+    @include breakpoint(large-desktop){
+        font-size: 15px;
+    }
+    @include breakpoint(desktop){
+        font-size: $normal;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: 13px;
+    }
+    @include breakpoint(mobile-m){
+        font-size: 11px;
+    }
+}
+.nav-ul-Div{
+    display: flex; 
+    flex-direction: column;
+    @include breakpoint(ipad-max){
+        display: none;
+    }
+}
+.nav-link{
+    font-family: $Poppins-Regular;
+    color: $text-color;
+    font-size: $normal;
+    @include breakpoint(large-desktop){
+        font-size: 13px;
+    }
+    @include breakpoint(mobile-xl){
+        font-size: 11px;
+    }
+    @include breakpoint(mobile-m){
+        font-size: $smaller;
+    }
+}
+#fbtn{
+    font-family: $FiraSans-Bold; 
+    color: $text-color;
+}
+.span1{
+    color: $span-color;
+}
+.colorbtn{
+    width: 15px;
+    height: 15px;
+}
+#colorbtn1{
+    background-color: $span-color;
+}
+#colorbtn2{
+    background-color: $back-color-green;
+}
+#colorbtn3{
+    background-color: $back-color-yellow;
+}
+.popupS{
+    display: none;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: $back-popup-black;
+    background-color: $back-popup-grey;
+}
+#popupC{
+    width: 30%;
+}
+#search-icon1{
+    margin-left: -5px;
+    
+}
+#i-icon{
+    color: #265781c2;
+}
+.close {
+    margin-top: -15px;
+    color: #aaaaaa;
+    &:hover, &:focus{
+        color: $back-popup-black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+.navbar-toggler{
+    @include breakpoint(mobile-m){
+        padding: 0.15rem 0.35rem;
+    }
+}
+.navbar-toggler-icon{
+    @include breakpoint(mobile-m){
+        font-size: $medium;
+    }
+}
+.toggle-Ul{
+    font-weight: 300;
+    color: $span-color;
+    font-size: 23px;
+}
+.span2{
+    font-weight: 400;
+    color: $text-color;
+    font-size: $normal;
+}
+#toggle-Ul{
+    display: none;
+    @include breakpoint(ipad-max){
+        display: block;
+    }
+}
+#box{
+    width: 54px;
+    height: 54px;
+    background-color: $back-color-yellow;
+    border-radius: 15px;
+    left:50%;
+    margin-top: -6%;
+    @include breakpoint(large-desktop){
+        margin-top: -7%;
+    }
+    @include breakpoint(ipad-max){
+        margin-top: -8%;
+    }
+    @include breakpoint(tablet){
+        width: 44px;
+        height: 44px;
+        margin-top: -10%;
+    }
+    @include breakpoint(mobile-xl){
+        margin-top: -11%;
+    }
+    @include breakpoint(mobile-l){
+        width: 40px;
+        height: 40px;
+        bottom: 11px;
+        margin-top: -12%;
+    }
+}
+#Inbox{
+    width: 18px;
+    height: 25px;
+    @include breakpoint(tablet){
+        width: 14px;
+        height: 20px;
+    }
+}
